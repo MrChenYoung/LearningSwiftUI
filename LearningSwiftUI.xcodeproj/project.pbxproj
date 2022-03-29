@@ -17,6 +17,12 @@
 		FFA91C6D27F1B9B40032954C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA91C4327F1B9B20032954C /* ContentView.swift */; };
 		FFA91C6E27F1B9B40032954C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFA91C4427F1B9B30032954C /* Assets.xcassets */; };
 		FFA91C6F27F1B9B40032954C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFA91C4427F1B9B30032954C /* Assets.xcassets */; };
+		FFA91C8027F298500032954C /* ApplicationDelegateAdaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA91C7F27F298500032954C /* ApplicationDelegateAdaptor.swift */; };
+		FFA91C8227F29BA00032954C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA91C8127F29BA00032954C /* AppDelegate.swift */; };
+		FFA91C8627F2A2810032954C /* MainAdaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA91C8527F2A2810032954C /* MainAdaptor.swift */; };
+		FFA91C8827F2BC010032954C /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA91C8727F2BC000032954C /* Const.swift */; };
+		FFA91C8A27F2D5D10032954C /* EnvironmentAdaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA91C8927F2D5D10032954C /* EnvironmentAdaptor.swift */; };
+		FFA91C8D27F2E5450032954C /* MyText.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA91C8C27F2E5450032954C /* MyText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		FFA91C6227F1B9B40032954C /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFA91C6627F1B9B40032954C /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		FFA91C6827F1B9B40032954C /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		FFA91C7F27F298500032954C /* ApplicationDelegateAdaptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationDelegateAdaptor.swift; sourceTree = "<group>"; };
+		FFA91C8127F29BA00032954C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FFA91C8527F2A2810032954C /* MainAdaptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAdaptor.swift; sourceTree = "<group>"; };
+		FFA91C8727F2BC000032954C /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		FFA91C8927F2D5D10032954C /* EnvironmentAdaptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentAdaptor.swift; sourceTree = "<group>"; };
+		FFA91C8C27F2E5450032954C /* MyText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +110,12 @@
 			isa = PBXGroup;
 			children = (
 				FFA91C4227F1B9B20032954C /* LearningSwiftUIApp.swift */,
+				FFA91C8727F2BC000032954C /* Const.swift */,
 				FFA91C4327F1B9B20032954C /* ContentView.swift */,
+				FFA91C8B27F2E52C0032954C /* Views */,
+				FFA91C7E27F297F00032954C /* AttributeWrapper */,
 				FFA91C4427F1B9B30032954C /* Assets.xcassets */,
+				FFA91C8127F29BA00032954C /* AppDelegate.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -139,6 +155,24 @@
 				FFA91C6827F1B9B40032954C /* Tests_macOSLaunchTests.swift */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		FFA91C7E27F297F00032954C /* AttributeWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				FFA91C8527F2A2810032954C /* MainAdaptor.swift */,
+				FFA91C7F27F298500032954C /* ApplicationDelegateAdaptor.swift */,
+				FFA91C8927F2D5D10032954C /* EnvironmentAdaptor.swift */,
+			);
+			path = AttributeWrapper;
+			sourceTree = "<group>";
+		};
+		FFA91C8B27F2E52C0032954C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FFA91C8C27F2E5450032954C /* MyText.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,8 +333,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFA91C8227F29BA00032954C /* AppDelegate.swift in Sources */,
+				FFA91C8027F298500032954C /* ApplicationDelegateAdaptor.swift in Sources */,
+				FFA91C8D27F2E5450032954C /* MyText.swift in Sources */,
+				FFA91C8627F2A2810032954C /* MainAdaptor.swift in Sources */,
 				FFA91C6C27F1B9B40032954C /* ContentView.swift in Sources */,
+				FFA91C8A27F2D5D10032954C /* EnvironmentAdaptor.swift in Sources */,
 				FFA91C6A27F1B9B40032954C /* LearningSwiftUIApp.swift in Sources */,
+				FFA91C8827F2BC010032954C /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct LearningSwiftUIApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+  // 注入appdelegate
+  @UIApplicationDelegateAdaptor(AppDelegate.self) var appdelegate
+    
+  var body: some Scene {
+    WindowGroup {
+      ContentView()
     }
+  }
 }
