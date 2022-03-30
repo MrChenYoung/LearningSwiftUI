@@ -43,6 +43,18 @@ struct Cell: View {
             NavigationLink(destination: EnvironmentAdaptor()) {
             Text("\(item.description)")
           }
+        case "sheet":
+            NavigationLink(destination: PageToggle(pageToggleType: .sheet)) {
+                Text("\(item.description)")
+            }
+        case "fullScreenCover":
+            NavigationLink(destination: PageToggle(pageToggleType: .fullScreenCover)) {
+                Text("\(item.description)")
+            }
+        case "NavigationLink":
+            NavigationLink(destination: PageToggle(pageToggleType: .navigationLink)) {
+                Text("\(item.description)")
+            }
         default:
             NavigationLink(destination: Text("SwiftUI")) {
             Text("\(item.description)")
@@ -99,7 +111,31 @@ private let viewsList: [ListItem] = [
       ListItem(title: "@Environment")
     ]
   ),
+  ListItem(
+    title: "页面跳转",
+    children: [
+        ListItem(title: "模态方式", children: [
+            ListItem(title: "sheet"),
+            ListItem(title: "fullScreenCover")
+        ]),
+        ListItem(title: "导航跳转", children: [
+            ListItem(title: "NavigationLink")
+        ])
+    ]
+  )
 ]
+
+/**
+ 页面跳转方式
+  - 模态
+  - 全屏模态
+  - 导航
+ */
+enum PageToggleType{
+    case sheet
+    case fullScreenCover
+    case navigationLink
+}
 
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {

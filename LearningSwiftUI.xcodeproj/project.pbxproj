@@ -23,6 +23,9 @@
 		FFA91C8827F2BC010032954C /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA91C8727F2BC000032954C /* Const.swift */; };
 		FFA91C8A27F2D5D10032954C /* EnvironmentAdaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA91C8927F2D5D10032954C /* EnvironmentAdaptor.swift */; };
 		FFA91C8D27F2E5450032954C /* MyText.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA91C8C27F2E5450032954C /* MyText.swift */; };
+		FFB3145827F40E5C00C0853B /* PageToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB3145727F40E5C00C0853B /* PageToggle.swift */; };
+		FFB3145A27F423B800C0853B /* SecondPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB3145927F423B800C0853B /* SecondPage.swift */; };
+		FFB3145C27F425CC00C0853B /* ThirdPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB3145B27F425CC00C0853B /* ThirdPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,9 @@
 		FFA91C8727F2BC000032954C /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		FFA91C8927F2D5D10032954C /* EnvironmentAdaptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentAdaptor.swift; sourceTree = "<group>"; };
 		FFA91C8C27F2E5450032954C /* MyText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyText.swift; sourceTree = "<group>"; };
+		FFB3145727F40E5C00C0853B /* PageToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageToggle.swift; sourceTree = "<group>"; };
+		FFB3145927F423B800C0853B /* SecondPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPage.swift; sourceTree = "<group>"; };
+		FFB3145B27F425CC00C0853B /* ThirdPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +120,7 @@
 				FFA91C4327F1B9B20032954C /* ContentView.swift */,
 				FFA91C8B27F2E52C0032954C /* Views */,
 				FFA91C7E27F297F00032954C /* AttributeWrapper */,
+				FFB3145627F40E3800C0853B /* PageToggle */,
 				FFA91C4427F1B9B30032954C /* Assets.xcassets */,
 				FFA91C8127F29BA00032954C /* AppDelegate.swift */,
 			);
@@ -173,6 +180,16 @@
 				FFA91C8C27F2E5450032954C /* MyText.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		FFB3145627F40E3800C0853B /* PageToggle */ = {
+			isa = PBXGroup;
+			children = (
+				FFB3145727F40E5C00C0853B /* PageToggle.swift */,
+				FFB3145927F423B800C0853B /* SecondPage.swift */,
+				FFB3145B27F425CC00C0853B /* ThirdPage.swift */,
+			);
+			path = PageToggle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,10 +351,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFA91C8227F29BA00032954C /* AppDelegate.swift in Sources */,
+				FFB3145827F40E5C00C0853B /* PageToggle.swift in Sources */,
 				FFA91C8027F298500032954C /* ApplicationDelegateAdaptor.swift in Sources */,
 				FFA91C8D27F2E5450032954C /* MyText.swift in Sources */,
 				FFA91C8627F2A2810032954C /* MainAdaptor.swift in Sources */,
+				FFB3145C27F425CC00C0853B /* ThirdPage.swift in Sources */,
 				FFA91C6C27F1B9B40032954C /* ContentView.swift in Sources */,
+				FFB3145A27F423B800C0853B /* SecondPage.swift in Sources */,
 				FFA91C8A27F2D5D10032954C /* EnvironmentAdaptor.swift in Sources */,
 				FFA91C6A27F1B9B40032954C /* LearningSwiftUIApp.swift in Sources */,
 				FFA91C8827F2BC010032954C /* Const.swift in Sources */,
@@ -437,6 +457,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -489,6 +510,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
