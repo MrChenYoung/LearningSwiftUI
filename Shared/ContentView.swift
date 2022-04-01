@@ -12,8 +12,8 @@ struct ContentView: View {
     NavigationView {
       List(viewsList, children: \.children) { item in
         if item.children == nil {
-            // 要跳转的页面
-            Cell(item: item)
+          // 要跳转的页面
+          Cell(item: item)
         }
         else {
           Text("\(item.description)")
@@ -27,40 +27,46 @@ struct ContentView: View {
 
 // 点击跳转的行
 struct Cell: View {
-    var item: ListItem
-    
-    var body: some View{
-        switch item.description{
-        case "@main":
-            NavigationLink(destination: MainAdaptor()) {
-            Text("\(item.description)")
-          }
-        case "@UIApplicationDelegateAdaptor":
-            NavigationLink(destination: ApplicationDelegateAdaptor()) {
-            Text("\(item.description)")
-          }
-        case "@Environment":
-            NavigationLink(destination: EnvironmentAdaptor()) {
-            Text("\(item.description)")
-          }
-        case "sheet":
-            NavigationLink(destination: PageToggle(pageToggleType: .sheet)) {
-                Text("\(item.description)")
-            }
-        case "fullScreenCover":
-            NavigationLink(destination: PageToggle(pageToggleType: .fullScreenCover)) {
-                Text("\(item.description)")
-            }
-        case "NavigationLink":
-            NavigationLink(destination: PageToggle(pageToggleType: .navigationLink)) {
-                Text("\(item.description)")
-            }
-        default:
-            NavigationLink(destination: Text("SwiftUI")) {
-            Text("\(item.description)")
-          }
-        }
+  var item: ListItem
+
+  var body: some View {
+    NavigationLink {
+      ItemLinkView(itemTitle: item.title)
+    } label: {
+      Text("\(item.description)")
     }
+  }
+
+  // 点击每一行跳转到指定的View
+  struct ItemLinkView: View {
+    // 一行的标题
+    let itemTitle: String
+
+    var body: some View {
+      switch itemTitle {
+      case "Text":
+        MyText()
+      case "LazyVGrid":
+        MyLazyVGrid()
+      case "LazyHGrid":
+        MyLazyHGrid()
+      case "@main":
+        MainAdaptor()
+      case "@UIApplicationDelegateAdaptor":
+        ApplicationDelegateAdaptor()
+      case "@Environment":
+        EnvironmentAdaptor()
+      case "sheet":
+        PageToggle(pageToggleType: .sheet)
+      case "fullScreenCover":
+        PageToggle(pageToggleType: .fullScreenCover)
+      case "NavigationLink":
+        PageToggle(pageToggleType: .navigationLink)
+      default:
+        Text("SwiftUI")
+      }
+    }
+  }
 }
 
 struct ListItem: Hashable, Identifiable, CustomStringConvertible {
@@ -94,6 +100,13 @@ private let viewsList: [ListItem] = [
           ListItem(title: "TextView"),
         ]
       ),
+      ListItem(
+        title: "栅栏",
+        children: [
+          ListItem(title: "LazyHGrid"),
+          ListItem(title: "LazyVGrid"),
+        ]
+      ),
     ]
   ),
   ListItem(
@@ -108,33 +121,37 @@ private let viewsList: [ListItem] = [
     children: [
       ListItem(title: "@main"),
       ListItem(title: "@UIApplicationDelegateAdaptor"),
-      ListItem(title: "@Environment")
+      ListItem(title: "@Environment"),
     ]
   ),
   ListItem(
     title: "页面跳转",
     children: [
-        ListItem(title: "模态方式", children: [
-            ListItem(title: "sheet"),
-            ListItem(title: "fullScreenCover")
-        ]),
-        ListItem(title: "导航跳转", children: [
-            ListItem(title: "NavigationLink")
-        ])
+      ListItem(
+        title: "模态方式",
+        children: [
+          ListItem(title: "sheet"),
+          ListItem(title: "fullScreenCover"),
+        ]
+      ),
+      ListItem(
+        title: "导航跳转",
+        children: [
+          ListItem(title: "NavigationLink")
+        ]
+      ),
     ]
-  )
+  ),
 ]
 
-/**
- 页面跳转方式
-  - 模态
-  - 全屏模态
-  - 导航
- */
-enum PageToggleType{
-    case sheet
-    case fullScreenCover
-    case navigationLink
+/// 页面跳转方式
+///  - 模态
+///  - 全屏模态
+///  - 导航
+enum PageToggleType {
+  case sheet
+  case fullScreenCover
+  case navigationLink
 }
 
 struct ContentView_Previews: PreviewProvider {

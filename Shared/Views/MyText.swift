@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MyTest: View {
+struct MyText: View {
     var body: some View{
         Text("文本内容")
     }

@@ -23,6 +23,8 @@
 		FFA91C8827F2BC010032954C /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA91C8727F2BC000032954C /* Const.swift */; };
 		FFA91C8A27F2D5D10032954C /* EnvironmentAdaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA91C8927F2D5D10032954C /* EnvironmentAdaptor.swift */; };
 		FFA91C8D27F2E5450032954C /* MyText.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA91C8C27F2E5450032954C /* MyText.swift */; };
+		FFAA64AA27F5765900ABF64F /* MyLazyVGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAA64A927F5765900ABF64F /* MyLazyVGrid.swift */; };
+		FFAA64AC27F682A600ABF64F /* MyLazyHGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAA64AB27F682A600ABF64F /* MyLazyHGrid.swift */; };
 		FFB3145827F40E5C00C0853B /* PageToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB3145727F40E5C00C0853B /* PageToggle.swift */; };
 		FFB3145A27F423B800C0853B /* SecondPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB3145927F423B800C0853B /* SecondPage.swift */; };
 		FFB3145C27F425CC00C0853B /* ThirdPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB3145B27F425CC00C0853B /* ThirdPage.swift */; };
@@ -64,6 +66,8 @@
 		FFA91C8727F2BC000032954C /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		FFA91C8927F2D5D10032954C /* EnvironmentAdaptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentAdaptor.swift; sourceTree = "<group>"; };
 		FFA91C8C27F2E5450032954C /* MyText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyText.swift; sourceTree = "<group>"; };
+		FFAA64A927F5765900ABF64F /* MyLazyVGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLazyVGrid.swift; sourceTree = "<group>"; };
+		FFAA64AB27F682A600ABF64F /* MyLazyHGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLazyHGrid.swift; sourceTree = "<group>"; };
 		FFB3145727F40E5C00C0853B /* PageToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageToggle.swift; sourceTree = "<group>"; };
 		FFB3145927F423B800C0853B /* SecondPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPage.swift; sourceTree = "<group>"; };
 		FFB3145B27F425CC00C0853B /* ThirdPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdPage.swift; sourceTree = "<group>"; };
@@ -178,6 +182,8 @@
 			isa = PBXGroup;
 			children = (
 				FFA91C8C27F2E5450032954C /* MyText.swift */,
+				FFAA64A927F5765900ABF64F /* MyLazyVGrid.swift */,
+				FFAA64AB27F682A600ABF64F /* MyLazyHGrid.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -360,7 +366,9 @@
 				FFB3145A27F423B800C0853B /* SecondPage.swift in Sources */,
 				FFA91C8A27F2D5D10032954C /* EnvironmentAdaptor.swift in Sources */,
 				FFA91C6A27F1B9B40032954C /* LearningSwiftUIApp.swift in Sources */,
+				FFAA64AA27F5765900ABF64F /* MyLazyVGrid.swift in Sources */,
 				FFA91C8827F2BC010032954C /* Const.swift in Sources */,
+				FFAA64AC27F682A600ABF64F /* MyLazyHGrid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
