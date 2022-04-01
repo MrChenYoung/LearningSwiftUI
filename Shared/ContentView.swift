@@ -46,21 +46,21 @@ struct Cell: View {
       switch itemTitle {
       case "Text":
         MyText()
-      case "LazyVGrid":
+      case "纵向栏格(LazyVGrid)":
         MyLazyVGrid()
-      case "LazyHGrid":
+      case "横向栏格(LazyHGrid)":
         MyLazyHGrid()
-      case "@main":
+      case "APP入口(@main)":
         MainAdaptor()
-      case "@UIApplicationDelegateAdaptor":
+      case "APP代理(@UIApplicationDelegateAdaptor)":
         ApplicationDelegateAdaptor()
-      case "@Environment":
+      case "环境变量(@Environment)":
         EnvironmentAdaptor()
-      case "sheet":
+      case "简单模态(sheet)":
         PageToggle(pageToggleType: .sheet)
-      case "fullScreenCover":
+      case "全屏模态(fullScreenCover)":
         PageToggle(pageToggleType: .fullScreenCover)
-      case "NavigationLink":
+      case "导航跳转(NavigationLink)":
         PageToggle(pageToggleType: .navigationLink)
       default:
         Text("SwiftUI")
@@ -99,29 +99,32 @@ private let viewsList: [ListItem] = [
           ListItem(title: "SecureField"),
           ListItem(title: "TextView"),
         ]
-      ),
-      ListItem(
-        title: "栅栏",
-        children: [
-          ListItem(title: "LazyHGrid"),
-          ListItem(title: "LazyVGrid"),
-        ]
-      ),
+      )
     ]
   ),
   ListItem(
     title: "布局",
     children: [
-      ListItem(title: "frame"),
-      ListItem(title: "LayoutGuide"),
+        ListItem(title: "水平布局(HStack)"),
+        ListItem(title: "垂直布局(VStack)"),
+        ListItem(title: "Z轴纵向布局(ZStack)"),
+        ListItem(title: "横向栏格(LazyHGrid)"),
+        ListItem(title: "纵向栏格(LazyVGrid)"),
+        ListItem(title: "LayoutGuide"),
     ]
   ),
   ListItem(
     title: "属性包装器",
     children: [
-      ListItem(title: "@main"),
-      ListItem(title: "@UIApplicationDelegateAdaptor"),
-      ListItem(title: "@Environment"),
+      ListItem(title: "APP入口(@main)"),
+      ListItem(title: "APP代理(@UIApplicationDelegateAdaptor)"),
+      ListItem(title: "环境变量(@Environment)"),
+    ]
+  ),
+  ListItem(
+    title: "修饰器(modifier)",
+    children: [
+        ListItem(title: "frame")
     ]
   ),
   ListItem(
@@ -130,14 +133,14 @@ private let viewsList: [ListItem] = [
       ListItem(
         title: "模态方式",
         children: [
-          ListItem(title: "sheet"),
-          ListItem(title: "fullScreenCover"),
+          ListItem(title: "简单模态(sheet)"),
+          ListItem(title: "全屏模态(fullScreenCover)"),
         ]
       ),
       ListItem(
         title: "导航跳转",
         children: [
-          ListItem(title: "NavigationLink")
+          ListItem(title: "导航跳转(NavigationLink)")
         ]
       ),
     ]
