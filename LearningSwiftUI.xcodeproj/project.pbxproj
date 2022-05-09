@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FFA13BE1280014FF001F1F57 /* HomeListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA13BE0280014FF001F1F57 /* HomeListModel.swift */; };
+		FFA13BE428001693001F1F57 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA13BE328001693001F1F57 /* HomeViewModel.swift */; };
+		FFA13BEB280034BB001F1F57 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA13BEA280034BB001F1F57 /* Utils.swift */; };
+		FFA13BEF2800364D001F1F57 /* Data.json in Resources */ = {isa = PBXBuildFile; fileRef = FFA13BEE2800364D001F1F57 /* Data.json */; };
 		FFA91C5B27F1B9B40032954C /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA91C5A27F1B9B40032954C /* Tests_iOS.swift */; };
 		FFA91C5D27F1B9B40032954C /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA91C5C27F1B9B40032954C /* Tests_iOSLaunchTests.swift */; };
 		FFA91C6727F1B9B40032954C /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA91C6627F1B9B40032954C /* Tests_macOS.swift */; };
 		FFA91C6927F1B9B40032954C /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA91C6827F1B9B40032954C /* Tests_macOSLaunchTests.swift */; };
 		FFA91C6A27F1B9B40032954C /* LearningSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA91C4227F1B9B20032954C /* LearningSwiftUIApp.swift */; };
 		FFA91C6B27F1B9B40032954C /* LearningSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA91C4227F1B9B20032954C /* LearningSwiftUIApp.swift */; };
-		FFA91C6C27F1B9B40032954C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA91C4327F1B9B20032954C /* ContentView.swift */; };
-		FFA91C6D27F1B9B40032954C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA91C4327F1B9B20032954C /* ContentView.swift */; };
+		FFA91C6C27F1B9B40032954C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA91C4327F1B9B20032954C /* HomeView.swift */; };
+		FFA91C6D27F1B9B40032954C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA91C4327F1B9B20032954C /* HomeView.swift */; };
 		FFA91C6E27F1B9B40032954C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFA91C4427F1B9B30032954C /* Assets.xcassets */; };
 		FFA91C6F27F1B9B40032954C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFA91C4427F1B9B30032954C /* Assets.xcassets */; };
 		FFA91C8027F298500032954C /* ApplicationDelegateAdaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA91C7F27F298500032954C /* ApplicationDelegateAdaptor.swift */; };
@@ -25,6 +29,7 @@
 		FFA91C8D27F2E5450032954C /* MyText.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA91C8C27F2E5450032954C /* MyText.swift */; };
 		FFAA64AA27F5765900ABF64F /* MyLazyVGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAA64A927F5765900ABF64F /* MyLazyVGrid.swift */; };
 		FFAA64AC27F682A600ABF64F /* MyLazyHGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAA64AB27F682A600ABF64F /* MyLazyHGrid.swift */; };
+		FFAA64BA27F6F0D400ABF64F /* MyVStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAA64B927F6F0D400ABF64F /* MyVStack.swift */; };
 		FFB3145827F40E5C00C0853B /* PageToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB3145727F40E5C00C0853B /* PageToggle.swift */; };
 		FFB3145A27F423B800C0853B /* SecondPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB3145927F423B800C0853B /* SecondPage.swift */; };
 		FFB3145C27F425CC00C0853B /* ThirdPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB3145B27F425CC00C0853B /* ThirdPage.swift */; };
@@ -48,8 +53,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FFA13BE0280014FF001F1F57 /* HomeListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListModel.swift; sourceTree = "<group>"; };
+		FFA13BE328001693001F1F57 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		FFA13BEA280034BB001F1F57 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		FFA13BEE2800364D001F1F57 /* Data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Data.json; sourceTree = "<group>"; };
 		FFA91C4227F1B9B20032954C /* LearningSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningSwiftUIApp.swift; sourceTree = "<group>"; };
-		FFA91C4327F1B9B20032954C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FFA91C4327F1B9B20032954C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		FFA91C4427F1B9B30032954C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFA91C4927F1B9B30032954C /* LearningSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFA91C4F27F1B9B40032954C /* LearningSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +77,7 @@
 		FFA91C8C27F2E5450032954C /* MyText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyText.swift; sourceTree = "<group>"; };
 		FFAA64A927F5765900ABF64F /* MyLazyVGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLazyVGrid.swift; sourceTree = "<group>"; };
 		FFAA64AB27F682A600ABF64F /* MyLazyHGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLazyHGrid.swift; sourceTree = "<group>"; };
+		FFAA64B927F6F0D400ABF64F /* MyVStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyVStack.swift; sourceTree = "<group>"; };
 		FFB3145727F40E5C00C0853B /* PageToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageToggle.swift; sourceTree = "<group>"; };
 		FFB3145927F423B800C0853B /* SecondPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPage.swift; sourceTree = "<group>"; };
 		FFB3145B27F425CC00C0853B /* ThirdPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdPage.swift; sourceTree = "<group>"; };
@@ -105,6 +115,92 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FFA13BE22800163E001F1F57 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FFA13BF92800416C001F1F57 /* Home */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FFA13BF028003C08001F1F57 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				FFA13BEA280034BB001F1F57 /* Utils.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		FFA13BF128003C1C001F1F57 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				FFA13BEE2800364D001F1F57 /* Data.json */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		FFA13BF228003C7E001F1F57 /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				FFA13BF428003C9E001F1F57 /* Views */,
+				FFA13BE22800163E001F1F57 /* ViewModel */,
+				FFA13BF528003CC2001F1F57 /* Models */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		FFA13BF328003C87001F1F57 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FFA91C4327F1B9B20032954C /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FFA13BF428003C9E001F1F57 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FFB3145627F40E3800C0853B /* PageToggle */,
+				FFA91C7E27F297F00032954C /* AttributeWrapper */,
+				FFAA64B827F6F0AC00ABF64F /* Layout */,
+				FFA13BF328003C87001F1F57 /* Home */,
+				FFA91C8B27F2E52C0032954C /* SystemComponent */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FFA13BF528003CC2001F1F57 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FFA13BFA28004177001F1F57 /* Home */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FFA13BF628003D2C001F1F57 /* Const */ = {
+			isa = PBXGroup;
+			children = (
+				FFA91C8727F2BC000032954C /* Const.swift */,
+			);
+			path = Const;
+			sourceTree = "<group>";
+		};
+		FFA13BF92800416C001F1F57 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FFA13BE328001693001F1F57 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FFA13BFA28004177001F1F57 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FFA13BE0280014FF001F1F57 /* HomeListModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		FFA91C3C27F1B9B20032954C = {
 			isa = PBXGroup;
 			children = (
@@ -120,11 +216,10 @@
 			isa = PBXGroup;
 			children = (
 				FFA91C4227F1B9B20032954C /* LearningSwiftUIApp.swift */,
-				FFA91C8727F2BC000032954C /* Const.swift */,
-				FFA91C4327F1B9B20032954C /* ContentView.swift */,
-				FFA91C8B27F2E52C0032954C /* Views */,
-				FFA91C7E27F297F00032954C /* AttributeWrapper */,
-				FFB3145627F40E3800C0853B /* PageToggle */,
+				FFA13BF228003C7E001F1F57 /* Sections */,
+				FFA13BF628003D2C001F1F57 /* Const */,
+				FFA13BF128003C1C001F1F57 /* Resource */,
+				FFA13BF028003C08001F1F57 /* Tools */,
 				FFA91C4427F1B9B30032954C /* Assets.xcassets */,
 				FFA91C8127F29BA00032954C /* AppDelegate.swift */,
 			);
@@ -178,14 +273,22 @@
 			path = AttributeWrapper;
 			sourceTree = "<group>";
 		};
-		FFA91C8B27F2E52C0032954C /* Views */ = {
+		FFA91C8B27F2E52C0032954C /* SystemComponent */ = {
 			isa = PBXGroup;
 			children = (
 				FFA91C8C27F2E5450032954C /* MyText.swift */,
+			);
+			path = SystemComponent;
+			sourceTree = "<group>";
+		};
+		FFAA64B827F6F0AC00ABF64F /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				FFAA64B927F6F0D400ABF64F /* MyVStack.swift */,
 				FFAA64A927F5765900ABF64F /* MyLazyVGrid.swift */,
 				FFAA64AB27F682A600ABF64F /* MyLazyHGrid.swift */,
 			);
-			path = Views;
+			path = Layout;
 			sourceTree = "<group>";
 		};
 		FFB3145627F40E3800C0853B /* PageToggle */ = {
@@ -324,6 +427,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFA91C6E27F1B9B40032954C /* Assets.xcassets in Resources */,
+				FFA13BEF2800364D001F1F57 /* Data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,17 +460,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFA13BE1280014FF001F1F57 /* HomeListModel.swift in Sources */,
 				FFA91C8227F29BA00032954C /* AppDelegate.swift in Sources */,
 				FFB3145827F40E5C00C0853B /* PageToggle.swift in Sources */,
+				FFA13BE428001693001F1F57 /* HomeViewModel.swift in Sources */,
 				FFA91C8027F298500032954C /* ApplicationDelegateAdaptor.swift in Sources */,
 				FFA91C8D27F2E5450032954C /* MyText.swift in Sources */,
 				FFA91C8627F2A2810032954C /* MainAdaptor.swift in Sources */,
 				FFB3145C27F425CC00C0853B /* ThirdPage.swift in Sources */,
-				FFA91C6C27F1B9B40032954C /* ContentView.swift in Sources */,
+				FFA91C6C27F1B9B40032954C /* HomeView.swift in Sources */,
+				FFA13BEB280034BB001F1F57 /* Utils.swift in Sources */,
 				FFB3145A27F423B800C0853B /* SecondPage.swift in Sources */,
 				FFA91C8A27F2D5D10032954C /* EnvironmentAdaptor.swift in Sources */,
 				FFA91C6A27F1B9B40032954C /* LearningSwiftUIApp.swift in Sources */,
 				FFAA64AA27F5765900ABF64F /* MyLazyVGrid.swift in Sources */,
+				FFAA64BA27F6F0D400ABF64F /* MyVStack.swift in Sources */,
 				FFA91C8827F2BC010032954C /* Const.swift in Sources */,
 				FFAA64AC27F682A600ABF64F /* MyLazyHGrid.swift in Sources */,
 			);
@@ -376,7 +484,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFA91C6D27F1B9B40032954C /* ContentView.swift in Sources */,
+				FFA91C6D27F1B9B40032954C /* HomeView.swift in Sources */,
 				FFA91C6B27F1B9B40032954C /* LearningSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
